@@ -40,7 +40,7 @@ def test():
     # win32gui.EnumChildWindows(hwnd, lambda hwnd, param: param.append(hwnd),  hwndChildList)
     # for h in hwndChildList:
     #     print(win32gui.GetWindowText(h))
-    # # win32gui.MoveWindow(hwnd, 0, 0, 871, 580, True)
+    win32gui.MoveWindow(hwnd, 0, 0, 871, 580, True)
     pos = win32api.MAKELONG(CONST.AVATAR_X, CONST.AVATAR_Y)
     win32api.SendMessage(h, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, pos)
     # time.sleep(0.1)
